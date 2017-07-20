@@ -1,6 +1,4 @@
-taCabinet
-
-Getting started guide
+DataCabinet Getting started guide
 
 # **Introduction**
 
@@ -18,9 +16,10 @@ DataCabinet allows you to start building your Machine Learning projects in just 
 
 To register in DataCabinet:
 
-1. Go to [systems](http://datacabinet.systems) and complete the form.
+1. Go to [Register Page](http://datacabinet.systems/#/register) and complete the form.
 1. After completion of the registration form, a confirmation email is sent to your mail address.
 1. Follow the link in the email to verify your email address.
+1. DataCabinet will provision the account and send back an email.
 1. Log into DataCabinet using your credentials.
 
 ## **Create project**
@@ -38,13 +37,13 @@ To add project:
     1. Enter password to project.
 1. Click **OK**.
 
-The project will be created in approximately 30 minutes in the directory /mnt/ebs/&lt;your email&gt;.
+The project will be created in approximately 10 minutes in the directory /mnt/ebs/&lt;your email&gt;.
 
 ## **Install packages for environment**
 
 Every project you create in DataCabinet has a corresponding a Conda environment with the same name as the project.
 
-You can install additional packages for a project using either conda install &lt;pkg&gt; or pip install &lt;pkg&gt; and they are installed in the /mnt/ebs/[name/email] [/CodingTheMatrix/.conda](http://gmail.com/CodingTheMatrix/.conda)directory.
+You can install additional packages for a project using either conda install &lt;pkg&gt; or pip install &lt;pkg&gt; and they are installed in the /mnt/ebs/[name/email] [/<project name>/.conda] directory.
 
 To install package go to **New &gt; Terminal** , and then execute the following command as in the example using the name of needed package.
 
