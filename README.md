@@ -18,18 +18,18 @@ DataCabinet allows you to start building your Machine Learning projects in just 
 
 To register in DataCabinet:
 1. Go to [systems](http://datacabinet.systems) and complete the form.     
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_1.png)
+![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_1.png?raw=true)
 1. After completion of the registration form, a confirmation email is sent to your mail address.
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_2.png)
+![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_2.png?raw=true)
 1. Follow the link in the email to verify your email address.
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_3.png)
+![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_3.png?raw=true)
 1. Log into DataCabinet using your credentials.
 
 ## **Log in**
 When you log in DataCabinet and have an open session on other device, you can forcefully disconnect from that hard drive be selecting the Force Detach Hard Drive check box.  
-![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_from_login_window.jpg)
+![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_from_login_window.jpg?raw=true)
 
-If you do not remember having an open session on other device, this button will remind you: ![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_needed_after_login.jpg) - click it to disconnect. When this button is green (![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_no_disconnect_hard_drive.jpg)) - no other hard drives are connected.
+If you do not remember having an open session on other device, this button will remind you: ![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_needed_after_login.jpg?raw=true) - click it to disconnect. When this button is green (![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_no_disconnect_hard_drive.jpg?raw=true)) - no other hard drives are connected.
 
 
 ## **Create project**
@@ -40,14 +40,14 @@ To add project:
 
 1. Log in using your credentials.  
 1. On the main page of DataCabinet, click **Project** , and then click **Add New Project**.  
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_2.png)
+![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_2.png?raw=true)
 1. In the **Enter project details** dialog, expand the drop-down list, and then select the needed project type.  
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_3.png)
+![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_3.png?raw=true)
 1. In the **Enter project details** dialog, do the following:
     1. Select the needed Python version.
     1. Enter name of project.
     1. Enter password to project.  
-    ![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_4.png)
+    ![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_4.png?raw=true)
 1. Click **OK**.
 
 The project will be created in approximately 30 minutes in the directory /mnt/ebs/&lt;your email&gt;.
@@ -59,7 +59,7 @@ Every project you create in DataCabinet has a corresponding a Conda environment 
 You can install additional packages for a project using either conda install &lt;pkg&gt; or pip install &lt;pkg&gt; and they are installed in the /mnt/ebs/[name/email] [/CodingTheMatrix/.conda](http://gmail.com/CodingTheMatrix/.conda)directory.
 
 To install package go to **New &gt; Terminal** , and then execute the following command as in the example using the name of needed package.  
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/install_packages.png)
+![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/install_packages.png?raw=true)
 
 ## **Create notebook**
 
