@@ -10,13 +10,14 @@ DataCabinet offers:
 - Jupyter notebooks with support for python or R on your web browser. Other kernels can be manually installed.
 - Isolated Conda environments with their own package dependencies as DataCabinet projects
 - A dedicated disk and a shared disk to easily share projects and environments.
+
 It is powered by a distributed system running on AWS.
 
 # **Get started**
 
 ## **Get Access Code**
-DataCabinet product is in beta. Users can register but you will need an access code to launch the notebooks. Please use the Sign Up link on the
-landing page and we will send you an access code: [landing page](http://datacabinet.info)
+<span style="color:blue">*DataCabinet product is in beta. Users can register but you will need an access code to launch the notebooks. Please use the$i Sign Up link on the
+landing page and we will send you an access code: [landing page](http://datacabinet.info)*</span>
 
 ## **Register**
 
