@@ -78,5 +78,5 @@ When you finish writing code in the created file or just want to check current p
 DataCabinet provides you with the space on the NFS share (2GB) which allows you to publish your code using unix authorization mechanisms.
 
 You have two directories in DataCabinet:
-* /mnt/ebs/&lt;your email&gt; directory] - your personal directory where you configure access rights to the projects and files using Unix file permissions.
-* /mnt/nfs/&lt;your email&gt; directory] - general directory where all users have access to projects and files.
+* /mnt/ebs/&lt;your email&gt; directory] - your personal directory which is not seen by others.
+* /mnt/nfs/&lt;your email&gt; directory] - general directory where all users have access to projects and files. You can configure access rights to the projects and files using Unix file permissions.
