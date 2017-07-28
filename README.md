@@ -61,7 +61,7 @@ Every project you create in DataCabinet has a corresponding a Conda environment 
 You can install additional packages for a project using either conda install &lt;pkg&gt; or pip install &lt;pkg&gt; and they are installed in the &lt;your email&gt;/&lt;Project Name&gt;/.conda directory.
 
 To install package go to **New &gt; Terminal** , and then execute the following command as in the example using the name of needed package. 
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/install_packages.png?raw=true)
+![](https://github.com/datacabinet/datacabinet-info/blob/3f78634c07e4f6423d31fcccc8775e61f8aae4c0/images/install_packages.png?raw=true)
 
 ## **Create notebook**
 
