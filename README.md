@@ -22,17 +22,13 @@ landing page and we will send you an access code: [landing page](http://datacabi
 ## **Register**
 
 To register in DataCabinet:
-1. Go to [datacabinet systems](http://datacabinet.systems) and complete the form.     
-![](https://github.com/datacabinet/datacabinet-info/blob/b1137adfbc5779d0f8c6d23de78d6aec056c8719/images/register_step_1.png?raw=true)
+1. Go to [datacabinet systems](http://datacabinet.systems/#/register) and complete the form.     
 1. After completion of the registration form, a confirmation email is sent to your mail address.
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_2.png?raw=true)
 1. Follow the link in the email to verify your email address.
-![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/register_step_3.png?raw=true)
 1. After you receive the email that your datacabinet account is ready, Log into DataCabinet using your credentials.
 
 ## **Log in**
-![](https://github.com/datacabinet/datacabinet-info/blob/f34651d5aa5be9fc14acc6033794dec01b3e8cd8/images/login.png?raw=true)
-
+Go to [datacabinet systems](http://datacabinet.systems/) to login.
 
 After login, your hard drive is not available if there is another session still running. You can force the hard drive to connect to your current session
 This button will remind you if you have another session going on: ![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_needed_after_login.jpg?raw=true). It will disconnect if you click it. When this button is green (![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_no_disconnect_hard_drive.jpg?raw=true)) - no other hard drives are connected.
