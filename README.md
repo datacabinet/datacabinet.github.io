@@ -4,15 +4,19 @@ Getting started guide
 
 # **Introduction**
 
-DataCabinet is a cloud-based IDE for Machine Learning.
+DataCabinet is a online platform to maintain your Jupyter notebooks and conda environments.
 
-DataCabinet allows you to start building your Machine Learning projects in just a few clicks and without worrying about machine provisioning or tool installation. We offer:
-
-- Jupyter notebooks with support for python or R on your web browser
-- Isolated Conda environments with their own package dependencies
-- Load balanced and auto-scaled backend running on AWS
+DataCabinet offers:
+- Jupyter notebooks with support for python or R on your web browser. Other kernels can be manually installed.
+- Isolated Conda environments with their own package dependencies as DataCabinet projects
+- A dedicated disk and a shared disk to easily share projects and environments.
+It is powered by a distributed system running on AWS.
 
 # **Get started**
+
+## **Get Access Code**
+DataCabinet product is in beta. Users can register but you will need an access code to launch the notebooks. Please use the Sign Up link on the
+landing page and we will send you an access code: [landing page](http://datacabinet.info)
 
 ## **Register**
 
@@ -34,7 +38,7 @@ If you do not remember having an open session on other device, this button will 
 
 ## **Create project**
 
-In DataCabinet, python projects are used to store all your code, python/conda-related binaries, and package dependencies.
+A DataCabinet project comprises of a set of user code files and one conda environment. The conda environment can have package dependencies(like tensorflow or keras), notebook extensions(nbgrader, nbpresent), language kernels for notebooks etc.
 
 To add project:
 
@@ -50,15 +54,15 @@ To add project:
     ![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/create_project_step_4.png?raw=true)
 1. Click **OK**.
 
-The project will be created in approximately 30 minutes in the directory /mnt/ebs/&lt;your email&gt;.
+The project will be created in approximately 5 minutes in the directory /mnt/ebs/&lt;your email&gt;/&lt;Project Name&gt;.
 
 ## **Install packages for environment**
 
 Every project you create in DataCabinet has a corresponding a Conda environment with the same name as the project.
 
-You can install additional packages for a project using either conda install &lt;pkg&gt; or pip install &lt;pkg&gt; and they are installed in the /mnt/ebs/[name/email] [/CodingTheMatrix/.conda](http://gmail.com/CodingTheMatrix/.conda)directory.
+You can install additional packages for a project using either conda install &lt;pkg&gt; or pip install &lt;pkg&gt; and they are installed in the &lt;your email&gt;/&lt;Project Name&gt;/.conda directory.
 
-To install package go to **New &gt; Terminal** , and then execute the following command as in the example using the name of needed package.  
+To install package go to **New &gt; Terminal** , and then execute the following command as in the example using the name of needed package. 
 ![](https://github.com/datacabinet/datacabinet-info/blob/66dec31555b7e4d8f0bdca3ad3ccdcebd598f3d7/images/install_packages.png?raw=true)
 
 ## **Create notebook**
@@ -73,7 +77,7 @@ You can also can install various language kernels and create notebooks in multip
 
 When you finish writing code in the created file or just want to check current progress, just go to **Cell** &gt; **Run Cells**. The result will be displayed in the new dialog.
 
-DataCabinet provides you with the space on the NFS share (2GB) and allows you to synchronize your Google Drive and Dropbox storages with it.
+DataCabinet provides you with the space on the NFS share (2GB) which allows you to publish your code using unix authorization mechanisms.
 
 You have two directories in DataCabinet:
 * /mnt/nfs/&lt;your email&gt; directory] - your personal directory where you configure access rights to the projects and files using Unix file permissions.
