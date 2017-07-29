@@ -30,12 +30,10 @@ To register in DataCabinet:
 ## **Log in**
 Go to [datacabinet systems](http://datacabinet.systems/) to login.
 
-After login, your hard drive is not available if there is another session still running. You can force the hard drive to connect to your current session
-This button will remind you if you have another session going on: ![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_needed_after_login.jpg?raw=true). It will disconnect if you click it. When this button is green (![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_no_disconnect_hard_drive.jpg?raw=true)) - no other hard drives are connected.
+- After login, your hard drive is not available if there is another session still running. You can force the hard drive to connect to your current session
+This button will remind you if you have another session going on: ![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_disconnect_hard_drive_needed_after_login.jpg?raw=true). It will disconnect the other session if you click it. When this button is green (![](https://github.com/datacabinet/datacabinet-info/blob/9e5219d3eb374d4699d64889e173f7cb61ce6548/assets/base/log_in_no_disconnect_hard_drive.jpg?raw=true)) - the hard drive is correctly attached to the current session.
 
-You will need to enter an access code to be able to run Jupyter notebooks:
-
-
+- You will need to enter an access code to be able to run Jupyter notebooks:
 ![](https://github.com/datacabinet/datacabinet-info/blob/6e9deeb35c62944e8f7354ef3e1179bfeee7fa84/images/access_code1.png?raw=true)
 ![](https://github.com/datacabinet/datacabinet-info/blob/6e9deeb35c62944e8f7354ef3e1179bfeee7fa84/images/access_code2.png?raw=true)
 
@@ -91,5 +89,6 @@ You have two directories in DataCabinet:
 
 NBGrader (http://nbgrader.readthedocs.io/en/stable/) works in a hassle free way with DataCabinet. Using NBGrader and DataCabinet, it is easy to distribute complex assignments 
 with multiple dependencies to a large community of students.
+
 **<span style="color:red">[Marketing/Landing Page:](http://datacabinet.info) </span>**
 
