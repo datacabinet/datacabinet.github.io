@@ -91,5 +91,5 @@ You have two directories in DataCabinet:
 
 NBGrader (http://nbgrader.readthedocs.io/en/stable/) works in a hassle free way with DataCabinet. Using NBGrader and DataCabinet, it is easy to distribute complex assignments 
 with multiple dependencies to a large community of students.
-<span style="color:red">**Marketing/Landing Page: http://datacabinet.info **</span>
+**<span style="color:red">[Marketing/Landing Page:](http://datacabinet.info) </span>**
 
