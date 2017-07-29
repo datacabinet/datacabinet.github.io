@@ -85,3 +85,11 @@ DataCabinet provides you with the space on the NFS share (2GB) which allows you 
 You have two directories in DataCabinet:
 * /mnt/ebs/&lt;your email&gt; directory] - your personal directory which is not seen by others.
 * /mnt/nfs/&lt;your email&gt; directory] - general directory where all users have access to projects and files. You can configure access rights to the projects and files using Unix file permissions.
+
+
+## NBGrader
+
+NBGrader (http://nbgrader.readthedocs.io/en/stable/) works in a hassle free way with DataCabinet. Using NBGrader and DataCabinet, it is easy to distribute complex assignments 
+with multiple dependencies to a large community of students.
+<span style="color:red">**Marketing/Landing Page: http://datacabinet.info **</span>
+
