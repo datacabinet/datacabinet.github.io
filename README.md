@@ -14,14 +14,14 @@ DataCabinet offers:
 It is powered by a distributed system running on AWS.
 
 # **Get started**
-[Get Access Code](#get-access-code)
-[Register](#register)
-[Login](#log-in)
-[Create Project](#create-project)
-[Install packages](#install-packages-for-environment)
-[Code](#code)
-[NBGrader](#nbgrader)
-[NBPresent](#nbpresent)
+[Get Access Code](#get-access-code)<br /> 
+[Register](#register)<br /> 
+[Login](#log-in)<br /> 
+[Create Project](#create-project)<br /> 
+[Install packages](#install-packages-for-environment)<br /> 
+[Code](#code)<br /> 
+[NBGrader](#nbgrader)<br /> 
+[NBPresent](#nbpresent)<br /> 
 
 ## **Get Access Code**
 <span style="color:blue">*DataCabinet product is in beta. Users can register but you will need an access code to launch the notebooks. Please use Sign Up link on the
