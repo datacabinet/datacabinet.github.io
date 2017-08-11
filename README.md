@@ -14,6 +14,14 @@ DataCabinet offers:
 It is powered by a distributed system running on AWS.
 
 # **Get started**
+[Link to Header](#get-access-code)
+[Link to Header](#register)
+[Link to Header](#log-in)
+[Link to Header](#create-project)
+[Link to Header](#install-packages-for-environment)
+[Link to Header](#code)
+[Link to Header](#nbgrader)
+[Link to Header](#nbpresent)
 
 ## **Get Access Code**
 <span style="color:blue">*DataCabinet product is in beta. Users can register but you will need an access code to launch the notebooks. Please use Sign Up link on the
@@ -74,7 +82,7 @@ Using Jupyter you can create lots of interesting stuff: from simple notebooks to
 
 You can also can install various language kernels and create notebooks in multiple languages.
 
-## **Code!**
+## **Code**
 
 When you finish writing code in the created file or just want to check current progress, just go to **Cell** &gt; **Run Cells**. The result will be displayed in the new dialog.
 
