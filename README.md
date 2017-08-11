@@ -106,21 +106,16 @@ DataCabinet provides you the backend to create and distribute programming assign
 
 5. Make a directory in the nfs drive and give everyone permission to it: 
 
-                mkdir /mnt/nfs/<your email>/share 
-
+        mkdir /mnt/nfs/<your email>/share 
         chmod 777 /mnt/nfs/<your email>/share
 
 6. Open the nbgrader_config.py file that is generated through the jupyter console and put:
 
-               c = get_config()
+        c = get_config()
+        c.NbGrader.course_id = "<course id>"
+        c.TransferApp.exchange_directory = "/mnt/nfs/<your email>/share/<coursename>"
 
-c.NbGrader.course_id = "<course id>"
-
-c.TransferApp.exchange_directory = "/mnt/nfs/<your email>/share/<coursename>"
-
-        
-
-To create assignment:
+**Create assignment:**
 
 1. Open the needed project and notebook.
 
@@ -162,11 +157,9 @@ You can also list all needed students – "nbgrader db student list [name]"
 
 To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor:
 
- c = get_config()
-
-c.NbGrader.course_id = "<course id>"
-
-c.TransferApp.exchange_directory = "/mnt/nfs/<instructor email>/share/<coursename>"
+    c = get_config()
+    c.NbGrader.course_id = "<course id>"
+    c.TransferApp.exchange_directory = "/mnt/nfs/<instructor email>/share/<coursename>"
 
 To get the assignment, in Terminal, do "nbgrader fetch chapter0".
 
