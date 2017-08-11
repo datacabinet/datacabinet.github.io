@@ -74,7 +74,7 @@ Using Jupyter you can create lots of interesting stuff: from simple notebooks to
 
 You can also can install various language kernels and create notebooks in multiple languages.
 
-## Code!
+## **Code!**
 
 When you finish writing code in the created file or just want to check current progress, just go to **Cell** &gt; **Run Cells**. The result will be displayed in the new dialog.
 
@@ -85,7 +85,7 @@ You have two directories in DataCabinet:
 * /mnt/nfs/&lt;your email&gt; directory] - general directory where all users have access to projects and files. You can configure access rights to the projects and files using Unix file permissions.
 
 
-## NBGrader
+## **NBGrader**
 DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: http://nbgrader.readthedocs.io/en/stable/index.html 
 
 **Prerequisite:** Install and configure nbgrader with DataCabinet:
@@ -165,7 +165,7 @@ To get the assignment, in Terminal, do "nbgrader fetch chapter0".
 
 When you finish assignment, in Terminal, do "nbgrader validate chapter0".
 
-# nbpresent 
+## **NBPresent** 
 
 Using DataCabinet, you can create presentations in the Jupyter notebook.
 
