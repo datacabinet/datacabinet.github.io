@@ -1,6 +1,5 @@
 # DataCabinet
 
-Getting started guide
 
 # **Introduction**
 
