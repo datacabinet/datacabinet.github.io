@@ -201,7 +201,7 @@ Add as many slides as you need, using … (… button).
 
 5. On the top menu, click the Edit presentation button. ![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images//nbpresent_edit.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
 
-6. On the right panel, click Slides/Present.![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slides_view.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
+6. On the right panel, click Slides/Present.![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slide_view.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
 
 7. ![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images/delete_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Remove any slides already present by clicking the -Slide a number of times.
 
