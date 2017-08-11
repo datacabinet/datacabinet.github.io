@@ -86,9 +86,138 @@ You have two directories in DataCabinet:
 
 
 ## NBGrader
+DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: http://nbgrader.readthedocs.io/en/stable/index.html 
 
-NBGrader (http://nbgrader.readthedocs.io/en/stable/) works in a hassle free way with DataCabinet. Using NBGrader and DataCabinet, it is easy to distribute complex assignments 
-with multiple dependencies to a large community of students.
+**Prerequisite:** Install and configure nbgrader with DataCabinet:
+
+1. Open the needed project.
+
+2. Go to **New** > **Terminal**, and then install nbgrader:
+
+        pip install nbpresent
+
+ jupyter nbextension install **--**user **--**py nbgrader **--**overwrite
+ jupyter nbextension enable **--**user **--**py nbgrader
+ jupyter serverextension enable **--**user **--**py nbgrader
+
+3. You might need to restart notebook or log out/log in again to see the changes.
+
+4. On terminal, Run command "nbgrader --generate config" to create an empty configuration file.
+
+5. Make a directory in the nfs drive and give everyone permission to it: 
+
+                mkdir /mnt/nfs/<your email>/share 
+
+        chmod 777 /mnt/nfs/<your email>/share
+
+6. Open the nbgrader_config.py file that is generated through the jupyter console and put:
+
+               c = get_config()
+
+c.NbGrader.course_id = "<course id>"
+
+c.TransferApp.exchange_directory = "/mnt/nfs/<your email>/share/<coursename>"
+
+        
+
+To create assignment:
+
+1. Open the needed project and notebook.
+
+2. Go to View > Cell Toolbar > Create Assignment.
+
+3. Add cells with content:
+
+    1. Multiple cells with questions and tasks, each cell will have ID, points.
+
+    2. Solution in a solution block and student is expected to fill it up 
+
+    3. Assessment for you to grade answers
+
+4. Save using File > Save and Checkpoint
+
+5. Assign to students – in the New > Terminal execute "nbgrader assign chapter0". It create a notebook with assignment for students.
+
+Note: If you attempt assigning to students, and new file is not created, use dash force command. This command removes the existing file and creates new one for new version.
+
+6. To release assignment, in Terminal, execute command "nbgrader release --force chapter0 ".
+
+You students need to know how to access release shared directory.
+
+Useful commands in nbgrader (See more info on nbgrader docs):
+
+* Create assignment by putting the assignment notebooks in proper directory structure
+
+* Add assignment to database – "nbgrader assignment add chapter0"
+
+* Add a student to database – "nbgrader db student add [name]"
+
+You can also list all needed students – "nbgrader db student list [name]"
+
+* nbgrader assign chapter0 
+
+* nbgrader release chapter0
+
+**For student users**
+
+To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor:
+
+ c = get_config()
+
+c.NbGrader.course_id = "<course id>"
+
+c.TransferApp.exchange_directory = "/mnt/nfs/<instructor email>/share/<coursename>"
+
+To get the assignment, in Terminal, do "nbgrader fetch chapter0".
+
+When you finish assignment, in Terminal, do "nbgrader validate chapter0".
+
+# nbpresent 
+
+Using DataCabinet, you can create presentations in the Jupyter notebook.
+
+Jupyter notebook allows you to mix your presentations with runnable code, mathematical notation and latex symbols using MathJax.
+
+**Prerequisite:** install the nbpresent extension. In the needed project, go to **New** > **Terminal**, and then execute command:
+
+pip install nbpresent
+jupyter nbextension install nbpresent --user --py --overwrite
+jupyter nbextension enable nbpresent --user --py
+jupyter serverextension enable nbpresent --user --py
+
+Then go to the needed notebook. In the tool menu you have new buttons
+
+![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/nbpresent_edit_play.png?token=AbOF3OlaoYtxzMnwKXJ2G-k8kfOZckNoks5ZjiS1wA%3D%3D?raw=true) that allow creating and showing the presentation.
+
+1. Open the needed project and notebook.
+
+2. Go to View > Cell toolbar > Slideshow.
+
+3. In the Slide type drop-down list, select Slide.
+
+4. Go to Cell > Cell type, and select the needed option (Code, Markdown, and …) and enter content for your presentation.
+
+Add as many slides as you need, using … (… button).
+
+5. On the top menu, click the Edit presentation button. ![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/nbpresent_edit.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
+
+6. On the right panel, click Slides/Present.![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slides_view.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
+
+7. ![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/delete_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Remove any slides already present by clicking the -Slide a number of times.
+
+8. ![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Choose either Basic or RISE/reveal slide format. After choosing the format, press escape or press the notebook button to get back to the notebook.
+
+9. Now you can use the present button to present. 
+
+10. Tip: To see the source of the slide during the presentation, double-click a slide. To go back, press Ctrl + Enter.
 
 **<span style="color:red">[Marketing/Landing Page:](http://datacabinet.info) </span>**
+
+
+
+
+ 
+
+
+
 
