@@ -187,7 +187,7 @@ jupyter serverextension enable nbpresent --user --py
 
 Then go to the needed notebook. In the tool menu you have new buttons
 
-![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/nbpresent_edit_play.png?token=AbOF3OlaoYtxzMnwKXJ2G-k8kfOZckNoks5ZjiS1wA%3D%3D?raw=true) that allow creating and showing the presentation.
+![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images/nbpresent_edit_play.png?token=AbOF3OlaoYtxzMnwKXJ2G-k8kfOZckNoks5ZjiS1wA%3D%3D?raw=true) that allow creating and showing the presentation.
 
 1. Open the needed project and notebook.
 
@@ -199,13 +199,13 @@ Then go to the needed notebook. In the tool menu you have new buttons
 
 Add as many slides as you need, using … (… button).
 
-5. On the top menu, click the Edit presentation button. ![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/nbpresent_edit.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
+5. On the top menu, click the Edit presentation button. ![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images//nbpresent_edit.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
 
-6. On the right panel, click Slides/Present.![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slides_view.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
+6. On the right panel, click Slides/Present.![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slides_view.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)
 
-7. ![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/delete_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Remove any slides already present by clicking the -Slide a number of times.
+7. ![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images/delete_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Remove any slides already present by clicking the -Slide a number of times.
 
-8. ![image alt text](https://raw.githubusercontent.com/datacabinet/datacabinet-info/6b85ac0144e01b925be824afa49b7be66d763106/images/create_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Choose either Basic or RISE/reveal slide format. After choosing the format, press escape or press the notebook button to get back to the notebook.
+8. ![image alt text](https://github.com/datacabinet/datacabinet-info/blob/6b85ac0144e01b925be824afa49b7be66d763106/images//create_slides.png?token=AbOF3ONN2Re6TnW3N_VMNOeLngGN_zU4ks5ZjiS1wA%3D%3D?raw=true)Choose either Basic or RISE/reveal slide format. After choosing the format, press escape or press the notebook button to get back to the notebook.
 
 9. Now you can use the present button to present. 
 
