@@ -99,9 +99,9 @@ DataCabinet provides you the backend to create and distribute programming assign
 2. Go to **New** > **Terminal**, and then install nbgrader:
 
        pip install nbgrader
-       jupyter nbextension install **--**user **--**py nbgrader **--**overwrite
-       jupyter nbextension enable **--**user **--**py nbgrader
-       jupyter serverextension enable **--**user **--**py nbgrader
+       jupyter nbextension install --user --py nbgrader --overwrite
+       jupyter nbextension enable --user --py nbgrader
+       jupyter serverextension enable --user --py nbgrader
 
 3. You might need to restart notebook or log out/log in again to see the changes.
 
