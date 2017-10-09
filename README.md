@@ -105,7 +105,8 @@ DataCabinet provides you the backend to create and distribute programming assign
 
 3. You might need to restart notebook or log out/log in again to see the changes.
 
-4. On terminal, Run command "nbgrader --generate config" to create an empty configuration file.
+4. On terminal, Run the following command to create an empty configuration file:
+        nbgrader --generate-config
 
 5. Make a directory in the nfs drive and give everyone permission to it: 
 
