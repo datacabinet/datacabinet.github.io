@@ -98,10 +98,10 @@ DataCabinet provides you the backend to create and distribute programming assign
 
 2. Go to **New** > **Terminal**, and then install nbgrader:
 
-       * pip install nbpresent
-       * jupyter nbextension install **--**user **--**py nbgrader **--**overwrite
-       * jupyter nbextension enable **--**user **--**py nbgrader
-       * jupyter serverextension enable **--**user **--**py nbgrader
+       pip install nbgrader
+       jupyter nbextension install **--**user **--**py nbgrader **--**overwrite
+       jupyter nbextension enable **--**user **--**py nbgrader
+       jupyter serverextension enable **--**user **--**py nbgrader
 
 3. You might need to restart notebook or log out/log in again to see the changes.
 
@@ -176,10 +176,10 @@ Jupyter notebook allows you to mix your presentations with runnable code, mathem
 
 **Prerequisite:** install the nbpresent extension. In the needed project, go to **New** > **Terminal**, and then execute command:
 
-pip install nbpresent
-jupyter nbextension install nbpresent --user --py --overwrite
-jupyter nbextension enable nbpresent --user --py
-jupyter serverextension enable nbpresent --user --py
+        pip install nbpresent
+        jupyter nbextension install nbpresent --user --py --overwrite
+        jupyter nbextension enable nbpresent --user --py
+        jupyter serverextension enable nbpresent --user --py
 
 Then go to the needed notebook. In the tool menu you have new buttons
 
