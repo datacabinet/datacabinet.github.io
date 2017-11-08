@@ -218,5 +218,5 @@ Add as many slides as you need, using … (… button).
 
 
 ## **GitSsh**
-The default key resides in the directory /mnt/ebs/<email>/.ssh directory.
+The default key resides in the directory /mnt/ebs/\<email\>/.ssh directory.
 If you put the public key on your git provider, you will be able to access git and ssh.
