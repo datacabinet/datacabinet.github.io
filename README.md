@@ -216,10 +216,6 @@ Add as many slides as you need, using … (… button).
 **<span style="color:red">[Marketing/Landing Page:](http://datacabinet.info) </span>**
 
 
-
-
- 
-
-
-
-
+## **Using git and ssh**
+The default key resides in the directory /mnt/ebs/<email>/.ssh directory.
+If you put the public key on your git provider, you will be able to access git and ssh.
