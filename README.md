@@ -18,6 +18,7 @@ It is powered by a distributed system running on AWS.
 [Code](#code)<br /> 
 [NBGrader](#nbgrader)<br /> 
 [NBPresent](#nbpresent)<br /> 
+[Git and Ssh](#gitssh)<br /> 
 
 ## **Get Access Code**
 <span style="color:blue">*DataCabinet product is in beta. Users can register but you will need an access code to launch the notebooks. Please use Sign Up link on the
@@ -216,6 +217,6 @@ Add as many slides as you need, using … (… button).
 **<span style="color:red">[Marketing/Landing Page:](http://datacabinet.info) </span>**
 
 
-## **Using git and ssh**
+## **GitSsh**
 The default key resides in the directory /mnt/ebs/<email>/.ssh directory.
 If you put the public key on your git provider, you will be able to access git and ssh.
