@@ -14,6 +14,8 @@ It is powered by a distributed system running on AWS.
 [Register](#register)<br /> 
 [Login](#log-in)<br /> 
 [Create Project](#create-project)<br /> 
+[Export Project](#export-project)<br />
+[Import Project](#import-project)<br />
 [Install packages](#install-packages-for-environment)<br /> 
 [Code](#code)<br /> 
 [NBGrader](#nbgrader)<br /> 
@@ -78,6 +80,34 @@ To create notebook, on the **Files** tab, click the **New** button.
 Using Jupyter you can create lots of interesting stuff: from simple notebooks to math-heavy presentations and autograded assignments. To get started with Jupyter go to [Jupyter Notebook Basics](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html).
 
 You can also can install various language kernels and create notebooks in multiple languages.
+
+## **Export Project**
+Datacabinet allows you to export your project at any point. A common example would be to provision a project by installing a set of packages, writing some code in notebooks and then exporting it. Some other user can then import that project (using the share ID provided) and get a copy of the project exactly at the point the original user exported it.
+
+To export a project:
+1. Log in using your credentials.
+1. On the main page of DataCabinet, select the project, you want to export by clicking on the **Play** button on the project tile.
+1. Click 'reload' on the browser. You will see two extra buttons on the project tile now.
+1. Click on the middle **Share** button.
+1. On the window that appears, click the **Generate** button.
+1. Copy the 24 character ID that appears. It might take a while for the ID to appear, depending on how big your project is. 
+
+You can share this ID with anyone, you want to share the project with.
+
+
+## **Import Project**
+
+To import a project:
+1. Log in using your credentials.
+1. On the main page of DataCabinet, click **Project** , and then click **Import Project**.  
+1. In the **Import project ** dialog, do the following:
+    1. Enter the project share ID
+    1. Enter name of project.
+    1. Enter password to project.  
+1. Click **Import Project**.
+
+On a reload, you should see the project tile for the new imported project. It will take a while for the project to get provisioned.
+
 
 ## **Code**
 
