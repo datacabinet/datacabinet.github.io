@@ -159,7 +159,7 @@ DataCabinet provides you the backend to create and distribute programming assign
 
 **For student users**
 
-To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor in the nbgrader|config.py:
+To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor in the nbgrader_config.py:
 
     c = get_config()
     c.Exchnage.course_id = "<Project name>"
