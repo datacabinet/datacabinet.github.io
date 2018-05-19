@@ -96,18 +96,20 @@ DataCabinet provides you with the space on the NFS share (2GB) which allows you 
 
 
 ## **NBGrader**
-DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: http://nbgrader.readthedocs.io/en/stable/index.html 
+DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: [jupyter nbgrader](http://nbgrader.readthedocs.io/en/stable/index.html)
 
 **Prerequisite:** Install and configure nbgrader with DataCabinet:
 
 1. Open the needed project.
 
-2. Go to **New** > **Terminal**, and then install nbgrader:
+2. Go to **New** > **Terminal**, and then install nbgrader. You need to type your own:
 
        pip install nbgrader
-       jupyter nbextension install --user --py nbgrader --overwrite
+       jupyter nbextension install --user --overwrite —py nbgrader 
        jupyter nbextension enable --user --py nbgrader
        jupyter serverextension enable --user --py nbgrader
+
+
 
 3. You might need to restart notebook or log out/log in again to see the changes.
 
@@ -115,7 +117,7 @@ DataCabinet provides you the backend to create and distribute programming assign
 
         nbgrader --generate-config
 
-5. Make a directory in the nfs drive and give everyone permission to it: 
+5. Make a directory in Terminal and give everyone permission to it: 
 
         mkdir /mnt/nfs/<your email>/share 
         chmod 777 /mnt/nfs/<your email>/share
@@ -123,16 +125,19 @@ DataCabinet provides you the backend to create and distribute programming assign
 6. Open the nbgrader_config.py file that is generated through the jupyter console and put:
 
         c = get_config()
-        c.NbGrader.course_id = "<course id>"
-        c.TransferApp.exchange_directory = "/mnt/nfs/<your email>/share/<coursename>"
+        c.Exchange.course_id = "<Project name>"
+        c.Exchange.root = "/mnt/nfs/<your email>/share"
+	c.ExecutePreprocessor.kernel_name = “<Project name>”
 
 **Create assignment:**
 
-1. Open the needed project and notebook.
+1. Go to Formgrader > Add new assignment
 
-2. Go to View > Cell Toolbar > Create Assignment.
+2. Open the folder that you just created and create a notebook 
 
-3. Add cells with content:
+3. Go to View > Cell Toolbar > Create Assignment.
+
+4. Add cells with content:
 
     1. Multiple cells with questions and tasks, each cell will have ID, points.
 
@@ -140,41 +145,28 @@ DataCabinet provides you the backend to create and distribute programming assign
 
     3. Assessment for you to grade answers
 
-4. Save using File > Save and Checkpoint
+5. Save using File > Save and Checkpoint
 
-5. Assign to students – in the New > Terminal execute "nbgrader assign chapter0". It create a notebook with assignment for students.
+6. Go to Formgrader > Click Generate > Click release
 
-Note: If you attempt assigning to students, and new file is not created, use dash force command. This command removes the existing file and creates new one for new version.
+**Collect & Grade assignment:**
 
-6. To release assignment, in Terminal, execute command "nbgrader release --force chapter0 ".
+1. Go to Formgrader > Click collect
 
-You students need to know how to access release shared directory.
+2. click the number under Submissions
 
-Useful commands in nbgrader (See more info on nbgrader docs):
-
-* Create assignment by putting the assignment notebooks in proper directory structure
-
-* Add assignment to database – "nbgrader assignment add chapter0"
-
-* Add a student to database – "nbgrader db student add [name]"
-
-You can also list all needed students – "nbgrader db student list [name]"
-
-* nbgrader assign chapter0 
-
-* nbgrader release chapter0
+3. click the mark under Autograde
 
 **For student users**
 
-To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor:
+To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor in the nbgrader|config.py:
 
     c = get_config()
-    c.NbGrader.course_id = "<course id>"
-    c.TransferApp.exchange_directory = "/mnt/nfs/<instructor email>/share/<coursename>"
+    c.Exchnage.course_id = "<Project name>"
+    c.Exchange.root = "/mnt/nfs/<instructor email>/share/<Project name>"
 
-To get the assignment, in Terminal, do "nbgrader fetch chapter0".
+To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After they finish the assignment, they just can click submit.
 
-When you finish assignment, in Terminal, do "nbgrader validate chapter0".
 
 ## **NBPresent** 
 
