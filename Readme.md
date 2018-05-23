@@ -31,6 +31,10 @@ Go to [datacabinet systems](http://datacabinet.systems/) to login. You can eithe
 * Normal Login Screenshots
 * Google Login Screenshots
 
+After login, your hard drive is not available if there is another session still running. You can force the hard drive to connect to your current session This button will remind you if you have another session going on: . It will disconnect the other session if you click it. When this button is green () - the hard drive is correctly attached to the current session.
+
+You will need to enter an access code to be able to run Jupyter notebooks.
+
 
 ## **Create project**
 
