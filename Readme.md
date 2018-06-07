@@ -109,10 +109,9 @@ DataCabinet provides you the backend to create and distribute programming assign
 2. Go to **New** > **Terminal**, and then install nbgrader. You need to type your own:
 
        pip install nbgrader
-       jupyter nbextension install --user --overwrite —py nbgrader 
+       jupyter nbextension install --user --overwrite --py nbgrader 
        jupyter nbextension enable --user --py nbgrader
        jupyter serverextension enable --user --py nbgrader
-
 
 
 3. You might need to restart notebook or log out/log in again to see the changes.
@@ -133,13 +132,40 @@ DataCabinet provides you the backend to create and distribute programming assign
         c.Exchange.root = "/mnt/nfs/<your email>/share"
 	c.ExecutePreprocessor.kernel_name = “<Project name>”
 
-**Create assignment:**
+**Step 2**
+Before creating any assignments but after creating any materials that students need, such as textbooks and instructions, you need to create a student version of projects.
 
-1. Go to Formgrader > Add new assignment
+1. Generate a project’s ID from dashboard by clicking the middle button
+
+2. Import a project with the ID that you just create
+
+3. Install nbgrader as you follow part of the steps:
+
+       jupyter nbextension install --user --overwrite --py nbgrader 
+       jupyter nbextension enable --user --py nbgrader
+       jupyter serverextension enable --user --py nbgrader
+
+*Create installation document for student*
+
+1. Click **New** > **<Project name>**
+
+
+2. Type three lines of installation below:
+
+       jupyter nbextension install --user --overwrite --py nbgrader 
+       jupyter nbextension enable --user --py nbgrader
+       jupyter serverextension enable --user --py nbgrader
+
+3. Save
+
+
+**Create assignment (Original project):**
+
+1. Go to **Formgrader** > **Add new assignment**
 
 2. Open the folder that you just created and create a notebook 
 
-3. Go to View > Cell Toolbar > Create Assignment.
+3. Go to **View** > **Cell Toolbar** > **Create Assignment**.
 
 4. Add cells with content:
 
@@ -151,26 +177,29 @@ DataCabinet provides you the backend to create and distribute programming assign
 
 5. Save using File > Save and Checkpoint
 
-6. Go to Formgrader > Click Generate > Click release
+** Release assignment:**
+Go to **Formgrader** > Click **Generate** > Click **Release**
+
 
 **Collect & Grade assignment:**
 
-1. Go to Formgrader > Click collect
+1. Go to **Formgrader** > Click **Collect**
 
 2. click the number under Submissions
 
 3. click the mark under Autograde
 
-**For student users**
 
-To access assignments, student needs to install nbgrader extention. Follow the same instructions as the instructors. Only difference is that the course id and transfer directory needs to be that of the instructor in the nbgrader_config.py:
+**For Student Users**
 
-    c = get_config()
-    c.Exchnage.course_id = "<Project name>"
-    c.Exchange.root = "/mnt/nfs/<instructor email>/share/<Project name>"
+To access assignments, students needs to import a course with the ID that you create as a student view and to import nbgrader by running the document that you create. 
 
 To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After they finish the assignment, they just can click submit.
 
+
+***Keep in mind that you may need to log out and in the account after you install nbgrader.**
+
+***When you create a new notebook, you have to choose the same name as the project’s name under “New”.**
 
 ## **NBPresent** 
 
