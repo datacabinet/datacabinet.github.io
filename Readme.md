@@ -130,7 +130,7 @@ DataCabinet provides you the backend to create and distribute programming assign
         c = get_config()
         c.Exchange.course_id = "<Project name>"
         c.Exchange.root = "/mnt/nfs/<your email>/share"
-	c.ExecutePreprocessor.kernel_name = “<Project name>”
+        c.ExecutePreprocessor.kernel_name = “<Project name>”
 
 **Step 2**
 Before creating any assignments but after creating any materials that students need, such as textbooks and instructions, you need to create a student version of projects.
@@ -147,7 +147,7 @@ Before creating any assignments but after creating any materials that students n
 
 *Create installation document for student*
 
-1. Click **New** > **<Project name>**
+1. Click **New** > **"<Project name>"**
 
 
 2. Type three lines of installation below:
@@ -177,7 +177,8 @@ Before creating any assignments but after creating any materials that students n
 
 5. Save using File > Save and Checkpoint
 
-** Release assignment:**
+**Release assignment:**
+
 Go to **Formgrader** > Click **Generate** > Click **Release**
 
 
