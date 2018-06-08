@@ -147,7 +147,7 @@ Before creating any assignments but after creating any materials that students n
 
 *Create installation document for student*
 
-1. Click **New** > **"<Project name>"**
+1. Click **New** > **<i>&lt;Project name&gt;</i>**
 
 
 2. Type three lines of installation below:
