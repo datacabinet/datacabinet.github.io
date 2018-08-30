@@ -193,9 +193,12 @@ Go to **Formgrader** > Click **Generate** > Click **Release**
 
 **For Student Users**
 
-To access assignments, students needs to import a course with the ID that you create as a student view and to import nbgrader by running the document that you create. 
+To access assignments, students needs to import a course with the ID that you create as a student view and to import nbgrader by running the document that you create. After import, you have the run the project, open a terminal and enable nbgrader:
+       jupyter nbextension install --user --overwrite --py nbgrader 
+       jupyter nbextension enable --user --py nbgrader
+       jupyter serverextension enable --user --py nbgrader
 
-To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After they finish the assignment, they just can click submit.
+To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After they finish the assignment, they just can click submit. This might not be needed if the assignment is already fetched and instructor has not released a new version.
 
 
 ***Keep in mind that you may need to log out and in the account after you install nbgrader.**
