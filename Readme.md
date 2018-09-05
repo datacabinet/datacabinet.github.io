@@ -6,13 +6,13 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 - Jupyter notebooks with support for python or R on your web browser. Other kernels can be manually installed.
 - Isolated Conda environments with their own package dependencies as DataCabinet projects.
 - A dedicated disk and a shared disk to easily share projects and environments.
-- Integrated with NBGrader with advanced capbilities [Assignments with DataCabinet using NBGrader](#datacabinet-nbgrader)
+- Integrated with NBGrader assignments with advanced capbilities [DataCabinet and NBGrader](#datacabinet-and-nbgrader)
 
 ## **Get started**
 - [Register](#register)<br /> 
 - [Login](#log-in)<br /> 
 - [Create Project](#create-project)<br /> 
-- [Creating Notebooks](#create-notebook)<br /> 
+- [Creating Notebooks](#creating-notebooks)<br /> 
 - [Install packages](#install-packages-for-environment)<br /> 
 - [Export Project](#export-project)<br />
 - [Import Project](#import-project)<br />
@@ -93,7 +93,7 @@ When you finish writing code in the created file or just want to check current p
 
 DataCabinet provides you with the space on the NFS share (2GB) which allows you to publish your code using unix authorization mechanisms.
 
-## **Assignments with DataCabinet using NBGrader**
+## **DataCabinet and NBGrader**
 DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: [jupyter nbgrader](http://nbgrader.readthedocs.io/en/stable/index.html)
 
 ### **For instructor**
