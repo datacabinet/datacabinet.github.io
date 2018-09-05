@@ -105,7 +105,7 @@ DataCabinet provides you the backend to create and distribute programming assign
 ### **For instructor**
 **Prerequisite:** Install and configure nbgrader with DataCabinet:
 
-1. Open the needed project.
+1. Create and Open a new project.
 
 2. Go to **New** > **Terminal**, and then install nbgrader. You need to type your own:
 
@@ -155,7 +155,7 @@ DataCabinet provides you the backend to create and distribute programming assign
 
 Go to **Formgrader** > Click **Generate** > Click **Release**
 
-After releasing, students can work on the assignment and submit(explained in student users section)
+After releasing, instructors will have to create a student version of the assignment(explained in the next section: Create student version)
 
 **Collect & Grade assignment:**
 
@@ -166,15 +166,27 @@ After releasing, students can work on the assignment and submit(explained in stu
 3. click the mark under Autograde and see the solutions.
 
 
+### **Create student version**
+
+Repeat Step 1 to Step 4 on **For Instructor** -> **Pre-Requisite**
+
+Next, open the nbgrader_config.py file that is generated through the jupyter console and put:
+
+        c = get_config()
+        c.Exchange.course_id = "<Project name>"
+        c.Exchange.root = "/mnt/nfs/<instructor email>/share"
+
+Notice that <Project Name> is the project created by the instructor version and instructor email is instructor's email.
+
+Next, we share this project using DataCabinet Project Manager's share icon. That would give you the ID of the project. This ID can be shared with the student directly or as an http link: https://datacabinet.systems/#/projectImportRequest?project_id=<ID>
+
 ### **For Student Users**
 
-To access assignments, students needs to import a course with the ID that you create as a student view and to import nbgrader by running the document that you create. After import, you have the run the project, open a terminal and enable nbgrader:
-       jupyter nbextension install --user --overwrite --py nbgrader 
+To access assignments, students needs to import a course with the ID generated in the previous step (or by clicking the link). After import, you have the run the project, open a terminal and enable nbgrader:
        jupyter nbextension enable --user --py nbgrader
        jupyter serverextension enable --user --py nbgrader
 
-To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After they finish the assignment, they just can click submit. This might not be needed if the assignment is already fetched and instructor has not released a new version.
-
+To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After you finish the assignment, you just can click submit.
 
 ***Keep in mind that you may need to log out and in the account after you install nbgrader.**
 
