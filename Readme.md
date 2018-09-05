@@ -11,13 +11,14 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 - [Register](#register)<br /> 
 - [Login](#log-in)<br /> 
 - [Create Project](#create-project)<br /> 
+- [Creating Notebooks](#create-notebook)<br /> 
 - [Install packages](#install-packages-for-environment)<br /> 
 - [Export Project](#export-project)<br />
 - [Import Project](#import-project)<br />
 - [Code](#code)<br /> 
 
 
-## **Register**
+### **Register**
 
 You can register your account at [datacabinet systems](http://datacabinet.systems/#/register). After registering, you will be sent an e-mail for verification after which your account would be ready to login.  <br/> 
 <br /> 
@@ -25,7 +26,7 @@ You can register your account at [datacabinet systems](http://datacabinet.system
 <img src="Register_Final.jpg" alt="Register" style="width: 900px;"/> 
 
 
-## **Log in**
+### **Log in**
 Go to [datacabinet systems](http://datacabinet.systems/) to login. You can either login using your credentials or use your google account.
 
 * Normal Login Screenshots
@@ -36,7 +37,7 @@ After login, your hard drive is not available if there is another session still 
 You will need to enter an access code to be able to run Jupyter notebooks.
 
 
-## **Create project**
+### **Create project**
 
 A DataCabinet project comprises of a set of user code files and one conda environment. The conda environment can have package dependencies (like tensorflow or keras), notebook extensions (nbgrader, nbpresent), language kernels for notebooks etc.
 
@@ -45,8 +46,15 @@ To add a project, first you need to sign-in using your credentials or google acc
 
 <img src="Project.jpg" alt="Create Project" style="width: 900px;"/> 
 
+### **Creating Notebooks**
 
-## **Install packages for environment**
+Using Jupyter you can create lots of interesting stuff: from simple notebooks to math-heavy presentations and autograded assignments. To get started with Jupyter go to [Jupyter Notebook Basics](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html).
+
+You can also can install various language kernels and create notebooks in multiple languages.
+
+To create a notebook, on the **Files** tab, click the **New** button.
+
+### **Install packages for environment**
 
 Every project you create in DataCabinet has a corresponding Conda environment with the same name as the project.
 
@@ -59,18 +67,7 @@ A sample installation of a package **numpy** is highlighted below:<br/>
 
 <img src="pip1.jpg" alt="Package Install" style="width: 900px;"/>
 
-
-# **Jupyter Notebooks & Project Sharing**
-
-## **Creating Notebooks**
-
-Using Jupyter you can create lots of interesting stuff: from simple notebooks to math-heavy presentations and autograded assignments. To get started with Jupyter go to [Jupyter Notebook Basics](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html).
-
-You can also can install various language kernels and create notebooks in multiple languages.
-
-To create a notebook, on the **Files** tab, click the **New** button.
-
-## **Export Project**
+### **Export Project**
 Datacabinet allows you to export your project at any point. A common example would be to provision a project by installing a set of packages, writing some code in notebooks and then exporting it. Other users can import that project (using the share ID provided) and get a copy of the project exactly at the point the original user exported it.
 
 You can share this ID with anyone, you want to share the project with.
@@ -82,24 +79,20 @@ To export a project, you need to login using your credentials or your google acc
 <img src="export.jpg" alt="Export Project" style="width: 900px;"/>
 
 
-## **Import Project**
+### **Import Project**
 
 To import a project, you need to login using your credentials or your google account. The next steps needed to import a project are highlighted below- <br/> 
 <br/> 
 
 <img src="import.jpg" alt="Export Project" style="width: 900px;"/> 
 
-
-
-
-## **Code**
+### **Code**
 
 When you finish writing code in the created file or just want to check current progress, just go to **Cell** &gt; **Run Cells**. The result will be displayed in the new dialog.
 
 DataCabinet provides you with the space on the NFS share (2GB) which allows you to publish your code using unix authorization mechanisms.
 
-
-## **NBGrader**
+## **Assignments with DataCabinet using NBGrader**
 DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: [jupyter nbgrader](http://nbgrader.readthedocs.io/en/stable/index.html)
 
 ### **For instructor**
@@ -165,8 +158,7 @@ After releasing, instructors will have to create a student version of the assign
 
 3. click the mark under Autograde and see the solutions.
 
-
-### **Create student version**
+**Create student version**
 
 Repeat Step 1 to Step 4 on **For Instructor** -> **Pre-Requisite**
 
