@@ -165,7 +165,7 @@ After releasing, instructors will have to create a student version of the assign
 
 **Create student version**
 
-Repeat Step 1 to Step 4 on **For Instructor** -> **Pre-Requisite**
+Repeat Step 1 to Step 4 on **For Instructor** -> **Pre-Requisite** . Choose a different project name silly.
 
 Next, open the nbgrader_config.py file that is generated through the jupyter console and put:
 
@@ -181,6 +181,7 @@ Next, we share this project using DataCabinet Project Manager's share icon. That
 
 To access assignments, students needs to import a course with the ID generated in the previous step (or by clicking the link). After import, you have the run the project, open a terminal and enable nbgrader:
 
+       jupyter nbextension install --user --overwrite --py nbgrader 
        jupyter nbextension enable --user --py nbgrader
        jupyter serverextension enable --user --py nbgrader
 
