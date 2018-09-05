@@ -132,38 +132,11 @@ DataCabinet provides you the backend to create and distribute programming assign
         c.Exchange.root = "/mnt/nfs/<your email>/share"
         c.ExecutePreprocessor.kernel_name = “<Project name>”
 
-**Step 2**
-Before creating any assignments but after creating any materials that students need, such as textbooks and instructions, you need to create a student version of projects.
-
-1. Generate a project’s ID from dashboard by clicking the middle button
-
-2. Import a project with the ID that you just create
-
-3. Install nbgrader as you follow part of the steps:
-
-       jupyter nbextension install --user --overwrite --py nbgrader 
-       jupyter nbextension enable --user --py nbgrader
-       jupyter serverextension enable --user --py nbgrader
-
-*Create installation document for student*
-
-1. Click **New** > **<i>&lt;Project name&gt;</i>**
-
-
-2. Type three lines of installation below:
-
-       jupyter nbextension install --user --overwrite --py nbgrader 
-       jupyter nbextension enable --user --py nbgrader
-       jupyter serverextension enable --user --py nbgrader
-
-3. Save
-
-
 **Create assignment (Original project):**
 
 1. Go to **Formgrader** > **Add new assignment**
 
-2. Open the folder that you just created and create a notebook 
+2. Open the folder that you just created and create a notebook. Open the notebook.
 
 3. Go to **View** > **Cell Toolbar** > **Create Assignment**.
 
@@ -181,6 +154,7 @@ Before creating any assignments but after creating any materials that students n
 
 Go to **Formgrader** > Click **Generate** > Click **Release**
 
+After releasing, students can work on the assignment and submit(explained in student users section)
 
 **Collect & Grade assignment:**
 
