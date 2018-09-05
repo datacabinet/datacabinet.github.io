@@ -187,7 +187,7 @@ To access assignments, students needs to import a course with the ID generated i
        jupyter nbextension enable --user --py nbgrader
        jupyter serverextension enable --user --py nbgrader
 
-To get assignment, they need to click “fetch” first in **Assignents** and open the assignment. After you finish the assignment, you just can click submit.
+To get assignment, you need to click “fetch” first in **Assignents** and open the assignment. After you finish the assignment, you just can click submit.
 
 ***Keep in mind that you may need to log out and in the account after you install nbgrader.**
 
