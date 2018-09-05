@@ -102,6 +102,7 @@ DataCabinet provides you with the space on the NFS share (2GB) which allows you 
 ## **NBGrader**
 DataCabinet provides you the backend to create and distribute programming assignments using nbgrader. You can create a populated assignment with both questions and answers and then nbgrader turns it into unpopulated version which contains only questions. Then you can share the assignments with students, auto grade and/or form grade assignment, and then distribute grades. Please find more documentation about nbgrader here: [jupyter nbgrader](http://nbgrader.readthedocs.io/en/stable/index.html)
 
+### **For instructor**
 **Prerequisite:** Install and configure nbgrader with DataCabinet:
 
 1. Open the needed project.
@@ -160,12 +161,12 @@ After releasing, students can work on the assignment and submit(explained in stu
 
 1. Go to **Formgrader** > Click **Collect**
 
-2. click the number under Submissions
+2. click the digits under Submissions
 
-3. click the mark under Autograde
+3. click the mark under Autograde and see the solutions.
 
 
-**For Student Users**
+### **For Student Users**
 
 To access assignments, students needs to import a course with the ID that you create as a student view and to import nbgrader by running the document that you create. After import, you have the run the project, open a terminal and enable nbgrader:
        jupyter nbextension install --user --overwrite --py nbgrader 
