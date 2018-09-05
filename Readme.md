@@ -6,6 +6,7 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 - Jupyter notebooks with support for python or R on your web browser. Other kernels can be manually installed.
 - Isolated Conda environments with their own package dependencies as DataCabinet projects.
 - A dedicated disk and a shared disk to easily share projects and environments.
+- Integrated with NBGrader with advanced capbilities [Assignments with DataCabinet using NBGrader](#datacabinet-nbgrader)
 
 ## **Get started**
 - [Register](#register)<br /> 
