@@ -7,8 +7,8 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 - Isolated Conda environments with their own package dependencies as DataCabinet projects.
 - A dedicated disk and a shared disk to easily share projects and environments.
 - Integrated with NBGrader assignments with advanced capbilities [DataCabinet and NBGrader](#datacabinet-and-nbgrader)
-- Using git[gitssh] projects with DataCabinet. 
-- Common Problems[common-problems]
+- Using [git](#gitssh) projects with DataCabinet. 
+- [Common Problems](#common-problems)
 
 ## **Get started**
 - [Register](#register)<br /> 
