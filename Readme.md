@@ -111,7 +111,7 @@ DataCabinet provides you the backend to create and distribute programming assign
        jupyter serverextension enable --user --py nbgrader
 
 
-3. You might need to restart notebook or log out/log in again to see the changes.
+3. You might need to restart notebook or log out/log in again to see the changes. To restart the notebook, you will have to either logout/login or start another project and switch back to the current project. We are working on fixing this.
 
 4. On terminal, Run the following command to create an empty configuration file:
 
@@ -128,6 +128,8 @@ DataCabinet provides you the backend to create and distribute programming assign
         c.Exchange.course_id = "<Project name>"
         c.Exchange.root = "/mnt/nfs/<your email>/share"
         c.ExecutePreprocessor.kernel_name = “<Project name>”
+
+Please be careful there should be no spaces before these lines. You will have to restart notebook for exchange root to be setup properly.
 
 **Create assignment (Original project):**
 
