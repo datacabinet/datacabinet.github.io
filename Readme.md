@@ -176,13 +176,14 @@ Next, open the nbgrader_config.py file that is generated through the jupyter con
         c.Exchange.course_id = "<Project name>"
         c.Exchange.root = "/mnt/nfs/<instructor email>/share"
 
-Notice that <Project Name> is the project created by the instructor version and instructor email is instructor's email.
+Notice that \<Project Name\> is the course_id project created in the instructor version and instructor email is instructor's email where the project was shared. WE can also install any other data or packages that are required to run the project at this point.
 
-Next, we share this project using DataCabinet Project Manager's share icon. That would give you the ID of the project. This ID can be shared with the student directly or as an http link: https://datacabinet.systems/#/projectImportRequest?project_id=<ID>
+Next, we share this project using DataCabinet Project Manager's share icon. That would give you the ID of the project. This ID can be shared with the student directly or as an http link: https://datacabinet.systems/#/projectImportRequest?project_id=\<ID\>
 
 ### **For Student Users**
 
 To access assignments, students needs to import a course with the ID generated in the previous step (or by clicking the link). After import, you have the run the project, open a terminal and enable nbgrader:
+
        jupyter nbextension enable --user --py nbgrader
        jupyter serverextension enable --user --py nbgrader
 
