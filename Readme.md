@@ -29,7 +29,7 @@ You can register a datacabinet account using your Google account at  [datacabine
 
 <img src="assets1/img/oauth.png" alt="Register" style="width: 900px;"/> 
 
-#### Method 2: 
+#### Method 2: Directly on datacabinet
 You can register your account at [datacabinet systems](http://datacabinet.systems/#/register). After registering, you will be sent an e-mail for verification after which your account would be ready to login.  <br/> 
 <br /> 
 
@@ -37,7 +37,7 @@ You can register your account at [datacabinet systems](http://datacabinet.system
 
 
 ### **Log in**
-Go to [datacabinet systems](http://datacabinet.systems/) to login. You can either login using your credentials or use your google account.
+Go to [datacabinet systems](http://datacabinet.systems/) to login. You can either login using your credentials with datacabinet or use your google account.
 
 <img src="assets1/img/login-hdd.png" alt="Register" style="width: 900px;"/> 
 
@@ -50,7 +50,7 @@ You will need to enter an access code to be able to run Jupyter notebooks after 
 
 A DataCabinet project comprises of a set of user code files and one conda environment. The conda environment can have package dependencies (like tensorflow or keras), notebook extensions (nbgrader, nbpresent), language kernels for notebooks etc.
 
-To add a project, first you need to sign-in using your credentials or google account. <br/> 
+To add a project, first you need to sign-in using your credentials or google account. You have to choose a Project Name and a password. Our environments also have a default Python version. You can choose the one you like. For other languages, you have to install the corresponding Jupyter kernel. Most of them are available as pypi or conda packages. See install packages for details. <br/> 
 <br/> 
 
 <img src="Project.jpg" alt="Create Project" style="width: 900px;"/> 
@@ -89,11 +89,16 @@ To export a project, you need to login using your credentials or your google acc
 
 
 ### **Import Project**
+There are two ways to import a project from someone else:
+#### Method 1: Directly using the project id.
+Get the id of the project from the sharer and use the import button. You will have to choose the name of the project and a password for the Jupyter notebook.
 
+<img src="assets/img/import.jpg" alt="Export Project" style="width: 900px;"/> 
+
+#### Method 2:
 To import a project, you need to login using your credentials or your google account. The next steps needed to import a project are highlighted below- <br/> 
 <br/> 
 
-<img src="import.jpg" alt="Export Project" style="width: 900px;"/> 
 
 ### **Code**
 
