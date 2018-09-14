@@ -39,12 +39,11 @@ You can register your account at [datacabinet systems](http://datacabinet.system
 ### **Log in**
 Go to [datacabinet systems](http://datacabinet.systems/) to login. You can either login using your credentials or use your google account.
 
-* Normal Login Screenshots
-* Google Login Screenshots
+<img src="assets1/img/login-hdd.png" alt="Register" style="width: 900px;"/> 
 
 After login, your hard drive is not available if there is another session still running. You can force the hard drive to connect to your current session This button will remind you if you have another session going on: . It will disconnect the other session if you click it. When this button is green () - the hard drive is correctly attached to the current session.
 
-You will need to enter an access code to be able to run Jupyter notebooks.
+You will need to enter an access code to be able to run Jupyter notebooks after your trial runs out.
 
 
 ### **Create project**
