@@ -23,6 +23,13 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 
 ### **Register**
 
+#### Method 1: Using Google Account
+You can register a datacabinet account using your Google account. First time you login/register, it will take 5 minutes to provision your account after which you can login using the same method you registered.
+<br/>
+
+<img src="assets1/img/oauth.png" alt="Register" style="width: 900px;"/> 
+
+#### Method 2: 
 You can register your account at [datacabinet systems](http://datacabinet.systems/#/register). After registering, you will be sent an e-mail for verification after which your account would be ready to login.  <br/> 
 <br /> 
 
