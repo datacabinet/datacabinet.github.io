@@ -14,6 +14,7 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 - [Register](#register)<br /> 
 - [Login](#log-in)<br /> 
 - [Create Project](#create-project)<br /> 
+- [Launch Project](#launch-project)<br /> 
 - [Creating Notebooks](#creating-notebooks)<br /> 
 - [Install packages](#install-packages-for-environment)<br /> 
 - [Export Project](#export-project)<br />
@@ -55,6 +56,11 @@ To add a project, first you need to sign-in using your credentials or google acc
 
 <img src="Project.jpg" alt="Create Project" style="width: 900px;"/> 
 
+### **Launch project**
+Launching a notebook is easy. Just click the play button on project manager. It will prompt you for the password that was entered during project creation time(add or import).
+
+<img src="assets1/img/run.png" alt="Run" style="width: 900px;"/> 
+
 ### **Creating Notebooks**
 
 Using Jupyter you can create lots of interesting stuff: from simple notebooks to math-heavy presentations and autograded assignments. To get started with Jupyter go to [Jupyter Notebook Basics](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html).
@@ -62,6 +68,7 @@ Using Jupyter you can create lots of interesting stuff: from simple notebooks to
 You can also can install various language kernels and create notebooks in multiple languages.
 
 To create a notebook, on the **Files** tab, click the **New** button.
+
 
 ### **Install packages for environment**
 
