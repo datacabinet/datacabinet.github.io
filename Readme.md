@@ -10,6 +10,11 @@ DataCabinet is an online platform to maintain your Jupyter notebooks and conda e
 - Using [git](#gitssh) projects with DataCabinet. 
 - [Common Problems](#common-problems)
 
+### Document sections
+- [Get Started](#get-started)<br /> 
+- [DataCabinet and NBGrader](#datacabinet-and-nbgrader)<br/> 
+- [Miscellaneous](#Miscellaneous)
+
 ## **Get started**
 - [Register](#register)<br /> 
 - [Login](#log-in)<br /> 
@@ -214,7 +219,8 @@ To get assignment, you need to click “fetch” first in **Assignents** and ope
 
 ***When you create a new notebook, you have to choose the same name as the project’s name under “New”.**
 
-## **NBPresent** 
+## Miscellaneous
+### **NBPresent** 
 
 Using DataCabinet, you can create presentations in the Jupyter notebook.
 
@@ -260,11 +266,11 @@ Add as many slides as you need, using … (… button).
 **<span style="color:red">[Marketing/Landing Page:](http://datacabinet.info) </span>**
 
 
-## **GitSsh**
+### **GitSsh**
 The default key resides in the directory /mnt/ebs/\<email\>/.ssh directory.
 If you put the public key on your git provider, you will be able to access git and ssh.
 
-## **Common Problems**
+### **Common Problems**
 1. My new projects do not take password
 It is possible your conda cache is corrupted. `conda clean --index-cache`
 
