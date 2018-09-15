@@ -94,14 +94,14 @@ There are two ways to import a project from someone else:
 Get the id of the project from the sharer and use the import button. You will have to choose the name of the project and a password for the Jupyter notebook. The import project button will be disabled until the hard drive is connected. 
 *There is a regression currently where after clicking the "Import Project" button, the dialog does not close immidiately. Clicking twice will lead to error. Please wait after clicking for 20 seconds.*
 
-<img src="assets1/img/import.jpg" alt="Import Project" style="width: 900px;"/> 
+<img src="assets1/img/import.png" alt="Import Project" style="width: 900px;"/> 
 
 #### Method 2: Using a link
 Get the link of the project from the sharer and use the import button. You will have to choose the name of the project and a password for the Jupyter notebook. Step 2 will not be required if you are already logged in. The import project button will be disabled until the hard drive is connected. 
 *There is a regression currently where after clicking the "Import Project" button, the dialog does not close immidiately. Clicking twice will lead to error. Please wait after clicking for 20 seconds.*
 
 
-<img src="assets1/img/import-id.jpg" alt="Import Project" style="width: 900px;"/> 
+<img src="assets1/img/import-id.png" alt="Import Project" style="width: 900px;"/> 
 <br/>
 
 ### **Code**
