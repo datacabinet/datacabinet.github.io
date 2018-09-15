@@ -101,7 +101,7 @@ Get the link of the project from the sharer and use the import button. You will 
 *There is a regression currently where after clicking the "Import Project" button, the dialog does not close immidiately. Clicking twice will lead to error. Please wait after clicking for 20 seconds.*
 
 
-<img src="assets1/img/import-id.png" alt="Import Project" style="width: 900px;"/> 
+<img src="assets1/img/import_id.png" alt="Import Project" style="width: 900px;"/> 
 <br/>
 
 ### **Code**
