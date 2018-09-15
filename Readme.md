@@ -13,7 +13,7 @@ DataCabinet enables running computer laboratory for classrooms. It does it using
 ### Document sections
 - [Get Started](#get-started)<br /> 
 - [DataCabinet and NBGrader](#datacabinet-and-nbgrader)<br/> 
-- [Miscellaneous](#Miscellaneous)
+- [Miscellaneous](#miscellaneous)
 
 ## **Get started**
 - [Register](#register)<br /> 
