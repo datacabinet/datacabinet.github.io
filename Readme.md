@@ -219,7 +219,8 @@ To get assignment, you need to click “fetch” first in **Assignents** and ope
 
 ***When you create a new notebook, you have to choose the same name as the project’s name under “New”.**
 
-## Miscellaneous
+## **Miscellaneous**
+
 ### **NBPresent** 
 
 Using DataCabinet, you can create presentations in the Jupyter notebook.
