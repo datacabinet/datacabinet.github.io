@@ -1,6 +1,6 @@
 # DataCabinet
 
-DataCabinet is an online platform to maintain your Jupyter notebooks and conda environments. It is powered by a distributed system running on AWS.
+DataCabinet enables running computer laboratory for classrooms. It does it using Jupyter notebooks, conda environments and containers. It is powered by a distributed system running on AWS.
 
 #### **Features**:
 - Jupyter notebooks with support for python or R on your web browser. Other kernels can be manually installed.
