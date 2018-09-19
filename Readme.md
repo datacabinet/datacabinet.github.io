@@ -233,10 +233,14 @@ To get assignment, you need to click “fetch” first in **Assignents** and ope
 You can use DataCabinet to create a number of complex assignments with various dependencies. Students can work on the assignments with almost zero setup.
 
 - [DeepLearning](#deep-learning)<br />
-- [C++ with NBGrader](#c++)<br />
-- [SQL with NBGrader](#sql)<br /> 
-- [R with NBGrader](#create-project)<br /> 
+- [C++ with NBGrader](#c++-with-nbgrader)<br />
+- [SQL with NBGrader](#sql-with-nbgrader)<br /> 
+- [R with NBGrader](#r-with-nbgrader)<br /> 
 
+### **Deep Learning**
+### **C++ with NBGrader**
+### **SQL with NBGrader**
+### **R with NBGrader**
 
 ## **Miscellaneous**
 
