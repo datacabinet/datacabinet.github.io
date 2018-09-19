@@ -13,6 +13,7 @@ DataCabinet enables running computer laboratory for classrooms. It does it using
 ### Document sections
 - [Get Started](#get-started)<br /> 
 - [DataCabinet and NBGrader](#datacabinet-and-nbgrader)<br/> 
+- [Examples](#examples)
 - [Miscellaneous](#miscellaneous)
 
 ## **Get started**
@@ -81,7 +82,7 @@ Every project you create in DataCabinet has a corresponding Conda environment wi
 
 You can install additional packages for a project using either **conda install packagename** or **pip install packagename**.
 
-> <span style="color:red"> In the Datacabinet platform, there are some installations that interfere with functioning and should not be pip installed. A list of these are - TBD </span>
+> <span style="cwlor:red"> In the Datacabinet platform, there are some installations that interfere with functioning and should not be pip installed(Jupyter, zmq etc). Sometimes these come as dependencies as well. For eg, the conda r-essentials package has Jupyter as a dependency. If somehow a wrong version of these packages is installed and Jupyter does not start, you may lose direct access to the project. It is a good idea to keep exporting your project at regular intervals so that you can retrieve the projects. </span>
 
 A sample installation of a package **numpy** is highlighted below:<br/> 
 <br/> 
@@ -89,7 +90,9 @@ A sample installation of a package **numpy** is highlighted below:<br/>
 <img src="pip1.jpg" alt="Package Install" style="width: 900px;"/>
 
 ### **Export Project**
-Datacabinet allows you to export your project at any point. A common example would be to provision a project by installing a set of packages, writing some code in notebooks and then exporting it. Other users can import that project (using the share ID provided) and get a copy of the project exactly at the point the original user exported it.
+Datacabinet allows you to export your project at any point. A common example would be to provision a project by installing a set of packages, writing some code in notebooks. Exporting a project exports the code and the conda/pip packages. You can also write a script that can do further setup when a user imports the project. Some libraries like 
+
+Other users can import that project (using the share ID provided) and get a copy of the project exactly at the point the original user exported it.
 
 You can share this ID with anyone, you want to share the project with.
 
@@ -219,6 +222,15 @@ To get assignment, you need to click “fetch” first in **Assignents** and ope
 
 ***When you create a new notebook, you have to choose the same name as the project’s name under “New”.**
 
+## **Examples**
+You can use DataCabinet to create a number of complex assignments with various dependencies. Students can work on the assignments with almost zero setup.
+
+- [](#register)<br /> 
+- [Login](#log-in)<br /> 
+- [Create Project](#create-project)<br /> 
+- [](#register)<br /> 
+
+
 ## **Miscellaneous**
 
 ### **NBPresent** 
@@ -274,12 +286,3 @@ If you put the public key on your git provider, you will be able to access git a
 ### **Common Problems**
 1. My new projects do not take password
 It is possible your conda cache is corrupted. `conda clean --index-cache`
-
-
-
-
-
-
-
-
-  
