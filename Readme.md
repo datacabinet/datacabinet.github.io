@@ -82,7 +82,7 @@ Every project you create in DataCabinet has a corresponding Conda environment wi
 
 You can install additional packages for a project using either **conda install packagename** or **pip install packagename**.
 
-> <span style="cwlor:red"> In the Datacabinet platform, there are some installations that interfere with functioning and should not be pip installed(Jupyter, zmq etc). Sometimes these come as dependencies as well. For eg, the conda r-essentials package has Jupyter as a dependency. If somehow a wrong version of these packages is installed and Jupyter does not start, you may lose direct access to the project. It is a good idea to keep exporting your project at regular intervals so that you can retrieve the projects. </span>
+> <span style="cwlor:red"> In the Datacabinet platform, there are some installations that interfere with functioning and should not be pip installed(Jupyter, zmq etc). Sometimes these come as dependencies as well. For eg, the conda r-essentials package has Jupyter as a dependency. If somehow a wrong version of these packages is installed and Jupyter does not start, you may lose direct access to the project. It is a good idea to keep exporting your project at regular intervals so that you can retrieve the projects. Please write to us if you get into this situation and we can fix it. We are working on a way to fix it properly through versions.</span>
 
 A sample installation of a package **numpy** is highlighted below:<br/> 
 <br/> 
@@ -90,7 +90,9 @@ A sample installation of a package **numpy** is highlighted below:<br/>
 <img src="pip1.jpg" alt="Package Install" style="width: 900px;"/>
 
 ### **Export Project**
-Datacabinet allows you to export your project at any point. A common example would be to provision a project by installing a set of packages, writing some code in notebooks. Exporting a project exports the code and the conda/pip packages. You can also write a script that can do further setup when a user imports the project. Some libraries like 
+Datacabinet allows you to export your project at any point. A common workflow of working on a project would be to create a project, write some code, install some packages and do some more initialization steps. At this point, we may want to export the package to share it with people. The export command is built for replicating the current state of your project to anyone.
+
+Exporting a project exports the code(and other files) and the conda/pip packages. You can also write a script that can do further setup when a user imports the project. See more about this script in the import section.
 
 Other users can import that project (using the share ID provided) and get a copy of the project exactly at the point the original user exported it.
 
@@ -104,6 +106,11 @@ To export a project, you need to login using your credentials or your google acc
 
 
 ### **Import Project**
+Import project takes a project ID and does the following:
+- Copies all the files
+- Installs all packages
+- IF there is a runnable file called import_init.sh in the base directory of the project, it runs that file.
+
 There are two ways to import a project from someone else:
 #### Method 1: Directly using the project id.
 Get the id of the project from the sharer and use the import button. You will have to choose the name of the project and a password for the Jupyter notebook in Step 2. The import project button will be disabled until the hard drive is connected. 
@@ -225,10 +232,10 @@ To get assignment, you need to click “fetch” first in **Assignents** and ope
 ## **Examples**
 You can use DataCabinet to create a number of complex assignments with various dependencies. Students can work on the assignments with almost zero setup.
 
-- [](#register)<br /> 
-- [Login](#log-in)<br /> 
-- [Create Project](#create-project)<br /> 
-- [](#register)<br /> 
+- [DeepLearning](#deep-learning)<br />
+- [C++ with NBGrader](#c++)<br />
+- [SQL with NBGrader](#sql)<br /> 
+- [R with NBGrader](#create-project)<br /> 
 
 
 ## **Miscellaneous**
