@@ -306,7 +306,7 @@ You can use DataCabinet to create a number of complex assignments with various d
 - [DeepLearning](#deep-learning)<br />
 We built an example of Deep Learning with openai gym. We started with an empty project, added the required notebooks and installed the required packages. The open AI gym is a python package that cannot be imported from conda or pypi. It has to be built from sources. We need to do two things to make it work. First, we put "gym" in the .export_ignore file in the project so that we do not try to export it like a pyPI/conda package. Also, we put "cd gym && pip install -e ." in the import_init.sh file so that the gym package gets installed properly.
 
-You can import it from here: [Reinforcement Learning](https://datacabinet.systems/ide?project_id=5b8b240b204a630013dc53d7)
+ You can import it from here: [Reinforcement Learning](https://datacabinet.systems/ide?project_id=5b8b240b204a630013dc53d7)
 
 - [C++ with NBGrader](#c++-with-nbgrader)<br />
 C++ is supported through a cling kernel. This also uses a source library to install the cling C++ kernel for Jupyter. cling is put into the .export_ignore file in the project. The import_init.sh file reinstalls the cling Jupyter kernel and also enables nbgrader which needs to be enabled before first usage. 
@@ -318,8 +318,9 @@ C++ is supported through a cling kernel. This also uses a source library to inst
     pip install .
     jupyter-kernelspec install cling-cpp17 --user 
 
-You can import it from here: [C++ NBGrader example](https://datacabinet.systems/ide?project_id=5ba17eaefc0edd0013939301)
-Please note that this is a student version of the NBGrader assignment. The instructor version has a little bit extra setup in the nbgrader_config.py file.
+ You can import it from here: [C++ NBGrader example](https://datacabinet.systems/ide?project_id=5ba17eaefc0edd0013939301)
+
+ Please note that this is a student version of the NBGrader assignment. The instructor version has a little bit extra setup in the nbgrader_config.py file.
 
     c.ExecutePreprocessor.kernel_name = "cling-cpp17"
     c.ClearSolutions.code_stub = {
@@ -333,12 +334,11 @@ SQL and NBGrader are enabled by using the cx_Oracle library for interacting with
 You can import it from here: [SQL NBGrader example](https://datacabinet.systems/ide?project_id=5b7deded247a6c00139dce19)
 This is the server version of the assignment.
 
-Please note that we are not using a dedicated kernel but just some magic so take SQL input. The NBGrader setup is exactly same as any Python assignment.
-Also, the Oracle SQL server may not be working forever in which case please point it to a working SQL server.
+ Please note that we are not using a dedicated kernel but just some magic so take SQL input. The NBGrader setup is exactly same as any Python assignment.
+ Also, the Oracle SQL server may not be working forever in which case please point it to a working SQL server.
 
 - [R with NBGrader](#r-with-nbgrader)<br />
-The R kernel is available with the r and r-essentials package available from conda. You can install NBGrader and use the R kernel.
-In the nbgrader_config.py file, use:
+The R kernel is available with the r and r-essentials package available from conda. You can install NBGrader and use the R kernel. In the nbgrader_config.py file, use:
 
     c.ExecutePreprocessor.kernel_name = "ir"
     c.ClearSolutions.code_stub = {
