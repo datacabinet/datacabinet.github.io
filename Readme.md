@@ -2,6 +2,8 @@
 
 DataCabinet enables running computer laboratory for classrooms. It does it using Jupyter notebooks, conda environments and containers. It is powered by a distributed system running on AWS.
 
+Our intent is to provide the building blocks and enough flexibility to be able to create complex programming assignments. They can have data, packages, backend components, autograding etc associated with them. The students or other uses of these assignments can easily open, work and submit assignments for review.
+
 #### **Features**:
 - Jupyter notebooks with support for python or R on your web browser. Other kernels can be manually installed.
 - Isolated Conda environments with their own package dependencies as DataCabinet projects.
@@ -84,6 +86,8 @@ You can install additional packages for a project using either **conda install p
 
 > <span style="cwlor:red"> In the Datacabinet platform, there are some installations that interfere with functioning and should not be pip installed(Jupyter, zmq etc). Sometimes these come as dependencies as well. For eg, the conda r-essentials package has Jupyter as a dependency. If somehow a wrong version of these packages is installed and Jupyter does not start, you may lose direct access to the project. It is a good idea to keep exporting your project at regular intervals so that you can retrieve the projects. Please write to us if you get into this situation and we can fix it. We are working on a way to fix it properly through versions.</span>
 
+Note: If you need to install pip packages from source, they cannot be exported. See Export Project on how to handle these.
+
 A sample installation of a package **numpy** is highlighted below:<br/> 
 <br/> 
 
@@ -91,6 +95,10 @@ A sample installation of a package **numpy** is highlighted below:<br/>
 
 ### **Export Project**
 Datacabinet allows you to export your project at any point. A common workflow of working on a project would be to create a project, write some code, install some packages and do some more initialization steps. At this point, we may want to export the package to share it with people. The export command is built for replicating the current state of your project to anyone.
+
+For Python projects installed using pip from sources(using pip install -e <dir>), you will need to make sure the directory is not exported by putting it in a .export_ignore file. The name of the package needs to be specified in the .export_ignore file in separate lines.
+
+Also, please do not use any other conda channel than the default channel. It will not import properly.
 
 Exporting a project exports the code(and other files) and the conda/pip packages. You can also write a script that can do further setup when a user imports the project. See more about this script in the import section.
 
@@ -114,14 +122,14 @@ Import project takes a project ID and does the following:
 There are two ways to import a project from someone else:
 #### Method 1: Directly using the project id.
 Get the id of the project from the sharer and use the import button. You will have to choose the name of the project and a password for the Jupyter notebook in Step 2. The import project button will be disabled until the hard drive is connected. 
-*There is a regression currently where after clicking the "Import Project" button, the dialog does not close immidiately. Clicking twice will lead to error. Please wait after clicking for 20 seconds.*
+*There is a regression currently where after clicking the "Import Project" button, the dialiog closes but tile does not appear for 20 seconds. Importing twice will lead to error. Please wait after importing for 20 seconds.*
 
 <img src="assets1/img/import.png" alt="Import Project" style="width: 900px;"/> 
 <br/>
 
 #### Method 2: Using a link
 Get the link of the project from the sharer and use the import button. You will have to choose the name of the project and a password for the Jupyter notebook in Step 3. Step 2 will not be required if you are already logged in. The import project button will be disabled until the hard drive is connected. 
-*There is a regression currently where after clicking the "Import Project" button, the dialog does not close immidiately. Clicking twice will lead to error. Please wait after clicking for 20 seconds.*
+*There is a regression currently where after clicking the "Import Project" button, the dialiog closes but tile does not appear for 20 seconds. Importing twice will lead to error. Please wait after importing for 20 seconds.*
 
 
 <img src="assets1/img/import_id.png" alt="Import Project" style="width: 900px;"/> 
@@ -225,22 +233,57 @@ To access assignments, students needs to import a course with the ID generated i
 
 To get assignment, you need to click “fetch” first in **Assignents** and open the assignment. After you finish the assignment, you just can click submit.
 
+
 ***Keep in mind that you may need to log out and in the account after you install nbgrader.**
 
 ***When you create a new notebook, you have to choose the same name as the project’s name under “New”.**
 
 ## **Examples**
-You can use DataCabinet to create a number of complex assignments with various dependencies. Students can work on the assignments with almost zero setup.
+You can use DataCabinet to create a number of complex assignments with various dependencies. Python assignments were discussed above. We will go through some more types. Students can work on the assignments with almost zero setup.
 
 - [DeepLearning](#deep-learning)<br />
-- [C++ with NBGrader](#c++-with-nbgrader)<br />
-- [SQL with NBGrader](#sql-with-nbgrader)<br /> 
-- [R with NBGrader](#r-with-nbgrader)<br /> 
+We built an example of Deep Learning with openai gym. We started with an empty project, added the required notebooks and installed the required packages. The open AI gym is a python package that cannot be imported from conda or pypi. It has to be built from sources. We need to do two things to make it work. First, we put "gym" in the .export_ignore file in the project so that we do not try to export it like a pyPI/conda package. Also, we put "cd gym && pip install -e ." in the import_init.sh file so that the gym package gets installed properly.
 
-### **Deep Learning**
-### **C++ with NBGrader**
-### **SQL with NBGrader**
-### **R with NBGrader**
+You can import it from here: [Reinforcement Learning](https://datacabinet.systems/ide?project_id=5b8b240b204a630013dc53d7)
+
+- [C++ with NBGrader](#c++-with-nbgrader)<br />
+C++ is supported through a cling kernel. This also uses a source library to install the cling C++ kernel for Jupyter. cling is put into the .export_ignore file in the project. The import_init.sh file reinstalls the cling Jupyter kernel and also enables nbgrader which needs to be enabled before first usage. 
+
+    jupyter nbextension install --user --overwrite --py nbgrader
+    jupyter nbextension enable --user --py nbgrader
+    jupyter serverextension enable --user --py nbgrader
+    cd /usr/share/cling_2018-09-13_ubuntu14/share/cling/Jupyter/kernel
+    pip install .
+    jupyter-kernelspec install cling-cpp17 --user 
+
+You can import it from here: [C++ NBGrader example](https://datacabinet.systems/ide?project_id=5ba17eaefc0edd0013939301)
+Please note that this is a student version of the NBGrader assignment. The instructor version has a little bit extra setup in the nbgrader_config.py file.
+
+    c.ExecutePreprocessor.kernel_name = "cling-cpp17"
+    c.ClearSolutions.code_stub = {
+        "R": "# your code here\nraise NotImplementedError",
+        "python": "# your code here\nraise NotImplementedError",
+        "C++": "/* your code here,\n If there are compile errors or uncaught exceptions, you may not get credit */ \n return 0;"
+    }
+
+- [SQL with NBGrader](#sql-with-nbgrader)<br />
+SQL and NBGrader are enabled by using the cx_Oracle library for interacting with Oracle databases and ipython-sql library to install sql magix instructions for Jupyter. You can directly write SQL into this library. Everything is natively available in pyPI so we do not require .export_ignore and import_init.sh files. If you need an Oracle account to play around with, please send us an email.
+You can import it from here: [SQL NBGrader example](https://datacabinet.systems/ide?project_id=5b7deded247a6c00139dce19)
+This is the server version of the assignment.
+
+Please note that we are not using a dedicated kernel but just some magic so take SQL input. The NBGrader setup is exactly same as any Python assignment.
+Also, the Oracle SQL server may not be working forever in which case please point it to a working SQL server.
+
+- [R with NBGrader](#r-with-nbgrader)<br />
+The R kernel is available with the r and r-essentials package available from conda. You can install NBGrader and use the R kernel.
+In the nbgrader_config.py file, use:
+
+    c.ExecutePreprocessor.kernel_name = "ir"
+    c.ClearSolutions.code_stub = {
+        "R": "# your code here\nraise NotImplementedError",
+        "python": "# your code here\nraise NotImplementedError",
+        "C++": "/* your code here,\n If there are compile errors or uncaught exceptions, you may not get credit */ \n return 0;"
+    }
 
 ## **Miscellaneous**
 
