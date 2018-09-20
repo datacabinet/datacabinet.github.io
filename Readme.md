@@ -310,22 +310,26 @@ We built an example of Deep Learning with openai gym. We started with an empty p
 - [C++ with NBGrader](#c++-with-nbgrader)<br />
 C++ is supported through a cling kernel. This also uses a source library to install the cling C++ kernel for Jupyter. cling is put into the .export_ignore file in the project. The import_init.sh file reinstalls the cling Jupyter kernel and also enables nbgrader which needs to be enabled before first usage.  
 
+    ```
     jupyter nbextension install --user --overwrite --py nbgrader
     jupyter nbextension enable --user --py nbgrader
     jupyter serverextension enable --user --py nbgrader
     cd /usr/share/cling_2018-09-13_ubuntu14/share/cling/Jupyter/kernel
     pip install .
     jupyter-kernelspec install cling-cpp17 --user
+    ```
 
   You can import it from here: [C++ NBGrader example](https://datacabinet.systems/ide?project_id=5ba17eaefc0edd0013939301)  
   Please note that this is a student version of the NBGrader assignment. The instructor version has a little bit extra setup in the nbgrader_config.py file.
 
+    ```
     c.ExecutePreprocessor.kernel_name = "cling-cpp17"
     c.ClearSolutions.code_stub = {
         "R": "# your code here\nraise NotImplementedError",
         "python": "# your code here\nraise NotImplementedError",
         "C++": "/* your code here,\n If there are compile errors or uncaught exceptions, you may not get credit */ \n return 0;"
     }
+    ```
 
 - [SQL with NBGrader](#sql-with-nbgrader)<br />
   SQL and NBGrader are enabled by using the cx_Oracle library for interacting with Oracle databases and ipython-sql library to install sql magix instructions for Jupyter. You can directly write SQL into this library. Everything is natively available in pyPI so we do not require .export_ignore and import_init.sh files. If you need an Oracle account to play around with, please send us an email.
@@ -337,13 +341,14 @@ C++ is supported through a cling kernel. This also uses a source library to inst
 
 - [R with NBGrader](#r-with-nbgrader)<br />
   The R kernel is available with the r and r-essentials package available from conda. You can install NBGrader and use the R kernel. In the nbgrader_config.py file, use:
-
+    ```
     c.ExecutePreprocessor.kernel_name = "ir"
     c.ClearSolutions.code_stub = {
         "R": "# your code here\nraise NotImplementedError",
         "python": "# your code here\nraise NotImplementedError",
         "C++": "/* your code here,\n If there are compile errors or uncaught exceptions, you may not get credit */ \n return 0;"
     }
+    ```
 
 ## **Miscellaneous**
 
