@@ -309,7 +309,7 @@ We built an example of Deep Learning with openai gym. We started with an empty p
 
 - [C++ with NBGrader](#c++-with-nbgrader)<br />
 C++ is supported through a cling kernel. This also uses a source library to install the cling C++ kernel for Jupyter. cling is put into the .export_ignore file in the project. The import_init.sh file reinstalls the cling Jupyter kernel and also enables nbgrader which needs to be enabled before first usage.  
-
+      
     ```
     jupyter nbextension install --user --overwrite --py nbgrader
     jupyter nbextension enable --user --py nbgrader
@@ -321,7 +321,7 @@ C++ is supported through a cling kernel. This also uses a source library to inst
 
   You can import it from here: [C++ NBGrader example](https://datacabinet.systems/ide?project_id=5ba17eaefc0edd0013939301)  
   Please note that this is a student version of the NBGrader assignment. The instructor version has a little bit extra setup in the nbgrader_config.py file.
-
+      
     ```
     c.ExecutePreprocessor.kernel_name = "cling-cpp17"
     c.ClearSolutions.code_stub = {
@@ -341,6 +341,7 @@ C++ is supported through a cling kernel. This also uses a source library to inst
 
 - [R with NBGrader](#r-with-nbgrader)<br />
   The R kernel is available with the r and r-essentials package available from conda. You can install NBGrader and use the R kernel. In the nbgrader_config.py file, use:
+      
     ```
     c.ExecutePreprocessor.kernel_name = "ir"
     c.ClearSolutions.code_stub = {
