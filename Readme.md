@@ -283,6 +283,61 @@ Go to nbgrader home '/tree' and open nbgrader_config.py. Type the following stri
 
 Then save the file. In Nbgrader assignment manager click synchronize button with assignment name near your assignment.
 
+### Integration with Open EdEx ###
+
+**Open EdEx requirements**
+
+* Edx-score-api (https://github.com/ExtensionEngine/edx-score-api) should be installed on Edx lms (ask your edx admin about this)
+
+**Getting api token**
+
+To request access to the edX Course Catalog API, you need a dedicated edx.org account with a user name that matches your organization’s identity. For example, if you are at an organization named Example, Inc., you need to create an edX account with a user name like Example. This enables edX to match your Course Catalog API request with an organization that is authorized to use the Course Catalog API.
+
+To request access to the edX Course Catalog API, follow these steps.
+
+* Sign in to edX at https://courses.edx.org/login with an account whose user name matches your organization’s identity, as described in Create an Account on edx.org for API Access.
+
+* Go to http://courses.edx.org/api-admin.
+
+* On the EdX API Access Request page, enter the information for your organization. All fields are required.
+
+      Company Name: The name of your company.
+      Website: The URL for your company’s website.
+      Company Address: Your company’s mailing address. This can be a street address or a post office box.
+      Application Description: A brief description of the main use for your application.
+
+ * At the bottom of the form, select the Terms of Service check box.
+
+ * Select Request API Access to submit your request.
+
+After you submit the request form, edX will review your request, and then edX will send you an email message approving your request or providing more information.
+
+When you receive your approval email message from edX, follow these steps.
+
+ * Go to http://your-edx-platform.com/api-admin/status.
+
+ * On the page that opens, enter the following information.<br>
+
+       Name: An identifying name that you assign to your application.
+       Redirect URIs (optional):  https://datacabinet.info
+
+ * Select Generate API client credentials.
+
+The screen displays your application name, client ID, client secret, and any redirect URIs that you entered. Make sure that you record your client ID and client secret.
+
+**Usage**
+
+Go to nbgrader home '/tree' and open nbgrader_config.py. Type next strings:
+
+      c.CourseDirectory.edx_auth_username = 'edx username'
+      c.CourseDirectory.edx_auth_password = 'edx password'
+      c.CourseDirectory.edx_users_ids = {'honor@example.com': 6}  # You may put dict of edx students ids into the settings
+      c.CourseDirectory.edx_app_key = 'Your app key'
+      c.CourseDirectory.edx_app_secret = 'Your app secret'
+      c.CourseDirectory.edx_courseid = 'your edx course id'  # for example 'course-v1:edX+DemoX+Demo_Course'
+      c.CourseDirectory.edx_domain = 'http://your-edx-platform.com'
+
+Then save it file. In Nbgrader assignment manager click synchronize button with assignment name near your assignment.
 
 ## For Student Users
 
